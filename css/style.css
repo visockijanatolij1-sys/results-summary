@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: hsl(221, 100%, 96%);
+}
+.wrapper{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 900px;
+}
+.card-left{
+    flex: 0 1 50%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+    background: linear-gradient(
+        hsl(252, 100%, 67%),
+        hsl(241, 81%, 54%)
+    );
+    border-radius: 15px;
+    position: relative;
+    z-index: 6;
+}
+.left-card__sub-title{
+    font-weight: 700;
+    font-size: 32px;
+    color: hsl(221, 100%, 96%);
+}
+.left-card__squre{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background: linear-gradient(
+       hsla(256, 72%, 46%, 1),
+        hsla(241, 72%, 46%, 0)
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.final-score{
+    font-size: 64px;
+    color: #fff;
+}
+.score-from{
+    font-size: 18px;
+    color: hsl(221, 100%, 96%);
+}
+.left-card__title{
+    font-size: 40px;
+    color: #fff;
+}
+.left-card__text{
+    max-width: 250px;
+    text-align: center;
+    color: hsl(221, 100%, 96%);
+}
+
+/* right side =======================*/
+
+.card-right{
+    background-color: #fff;
+    flex: 0 1 50%;
+    padding: 30px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    min-height: 100%;
+    position: relative;
+    z-index: 5;
+}
+.card-right::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    background-color: #fff;
+    left: -40px;
+    top: 0;
+    z-index: 4;
+}
+
+.right-card__results{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.right-card__result{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+
+}
+.result-card__text-one{
+    background-color: hsla(0, 100%, 67%, 0.103);
+}
+.result-card__text{
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.result-card__score span{
+    font-weight: 900;
+}
+
+/* text styles 01 ============ */
+
+.result-card__text-one .result-card__text{
+    color: hsl(0, 100%, 67%);
+    padding-left: 45px;
+    position: relative;
+}
+.result-card__text-one .result-card__text::before{
+    content: "";
+    width: 34px;
+    height: 34px;
+    background: url("../img/icon-reaction.svg") no-repeat center / cover;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+/* text styles 02 ============ */
+
+
+.result-card__text-two{
+    background-color: hsla(39, 100%, 56%, 0.11);
+}
+.result-card__text-two .result-card__text{
+    color: hsl(39, 100%, 56%);
+    padding-left: 45px;
+    position: relative;
+}
+.result-card__text-two .result-card__text::before{
+    content: "";
+    width: 34px;
+    height: 34px;
+    background: url("../img/icon-memory.svg") no-repeat center / cover;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+/* text styles 03 ============ */
+
+.result-card__text-three{
+    background-color: hsla(166, 100%, 37%, 0.11);
+}
+.result-card__text-three .result-card__text{
+    color: hsl(166, 100%, 37%);
+    padding-left: 45px;
+    position: relative;
+}
+.result-card__text-three .result-card__text::before{
+    content: "";
+    width: 34px;
+    height: 34px;
+    background: url("../img/icon-verbal.svg") no-repeat center / cover;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+/* text styles 04 ============ */
+
+
+.result-card__text-four{
+    background-color: hsla(234, 85%, 45%, 0.11);
+}
+.result-card__text-four .result-card__text{
+    color: hsl(234, 85%, 45%);
+    padding-left: 45px;
+    position: relative;
+}
+.result-card__text-four .result-card__text::before{
+    content: "";
+    width: 34px;
+    height: 34px;
+    background: url("../img/icon-visual.svg") no-repeat center / cover;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.button{
+    margin-top: 30px;
+    width: 100%;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(221, 100%, 96%);
+    height: 48px;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+.button:hover{
+    background-color: hsl(234, 85%, 45%);
+    transition: all 0.3s ease 0s;
+}
